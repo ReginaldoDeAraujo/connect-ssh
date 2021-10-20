@@ -1,7 +1,5 @@
-node {
-    
+node {  
 	
-
     env.AWS_ECR_LOGIN=true
     def newApp
     def registry = 'https://github.com/ReginaldoDeAraujo/connect-ssh'
@@ -16,8 +14,7 @@ node {
 		sh 'npm test'		
 	}
 	stage('Npm Build') {   
-      		sh 'npm run build'
-		sh "yarn run build"
+      		sh 'npm run build'		
    	}   
 
 }
