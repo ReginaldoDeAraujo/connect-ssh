@@ -10,8 +10,7 @@ node {
 		git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
 	}
 	stage('Build') {
-		sh 'npm install'
-		sh "yarn install"
+		sh 'npm install'		
 	}
 	stage('Test') {
 		sh 'npm test'
