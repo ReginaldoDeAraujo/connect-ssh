@@ -14,6 +14,7 @@ node {
 		sh 'npm test'		
 	}
 	stage('Npm Build') {   
+		sh 'yarn run build'
       		sh 'npm run build'		
    	}   
 
