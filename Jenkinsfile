@@ -13,8 +13,7 @@ node {
 	stage('Test') {
 		sh 'npm test'		
 	}
-	stage('Npm Build') {   
-		sh 'yarn run build'
+	stage('Npm Build') { 		
       		sh 'npm run build'		
    	}   
 
