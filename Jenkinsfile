@@ -16,10 +16,7 @@ node {
 	stage('Test') {
 		sh 'npm test'
 	}
-	stage('Npm Install And Build') {
-    steps {
-      sh 'npm install'
-      sh 'npm run build'
-	}
-    }
+	stage('Npm Build') {   
+      		sh 'npm run build'	
+   	}
 }
