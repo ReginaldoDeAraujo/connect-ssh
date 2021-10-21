@@ -1,9 +1,5 @@
-node {  
-	
-    env.AWS_ECR_LOGIN=true
-    def newApp
-    def registry = 'https://github.com/ReginaldoDeAraujo/connect-ssh'
-    def registryCredential = 'dockerhub'
+node {  	
+  
    	stage('Git') {
 		git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
 	}
