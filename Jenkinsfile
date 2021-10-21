@@ -1,17 +1,12 @@
-node {    
-    stage('Git') {
-        git 'https://github.com/ReginaldoDeAraujo/connect-ssh.git'
-    }  
-
-    stage('Build') {
-        sh 'npm install'        
-    }
-
-    stage('Npm Build') {        
-            sh 'npn build'      
-    }
-
-    stage('Test') {
-        sh 'npm test'       
-    }   
-}
+   	stage('Git') {
+		git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
+	}
+	stage('Build') {
+		sh 'npm install'		
+	}
+	stage('Test') {
+		sh 'npm test'		
+	}
+	stage('Npm Build') { 		
+      		sh 'npm run build'		
+   	}   
