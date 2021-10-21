@@ -1,5 +1,5 @@
    	stage('Git') {
-		git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
+		git 'https://github.com/ReginaldoDeAraujo/connect-ssh.git'
 	}
 	stage('Build') {
 		sh 'npm install'		
