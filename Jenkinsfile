@@ -1,6 +1,6 @@
 node {    
     stage('Git') {
-        git 'https://github.com/ReinaldoCS/connect-ssh.git'
+        git 'https://github.com/ReginaldoDeAraujo/connect-ssh.git'
     }
 
     stage('version') {
