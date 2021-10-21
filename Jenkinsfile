@@ -8,7 +8,7 @@ node {
     }
 
     stage('Npm Build') {        
-            sh 'npx build'      
+            sh 'npn build'      
     }
 
     stage('Test') {
