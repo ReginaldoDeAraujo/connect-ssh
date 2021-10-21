@@ -1,5 +1,4 @@
-node {  	
-  
+node {    
    	stage('Git') {
 		git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
 	}
