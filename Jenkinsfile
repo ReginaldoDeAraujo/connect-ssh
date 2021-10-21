@@ -4,6 +4,7 @@ node {
     }
 
     stage('version') {
+        sh 'cat Jenkinsfile'
         sh 'npm -v'
         sh 'npx -v'
         sh 'ls -la'
