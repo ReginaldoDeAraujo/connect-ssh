@@ -1,14 +1,7 @@
 node {    
     stage('Git') {
         git 'https://github.com/ReginaldoDeAraujo/connect-ssh.git'
-    }
-
-    stage('version') {
-        sh 'cat Jenkinsfile'
-        sh 'npm -v'
-        sh 'npx -v'
-        sh 'ls -la'
-    }
+    }  
 
     stage('Build') {
         sh 'npm install'        
