@@ -12,6 +12,6 @@ node {
     }
 
     stage('Test') {
-        sh 'npm start'       
+        sh 'npm test'       
     }   
 }
